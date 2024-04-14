@@ -6,15 +6,26 @@ import HelloWorld from './components/HelloWorld.vue'
 <template style="width:100%" class="background">
 <div class="flex" style="width:100%">
     <div>
-  <img src="./assets/images/student.jpeg" class="rounded-full w-auto h-auto logo object-cover"/>
-  <h1 class="text-4xl font-semibold lightgreentext marg1">Izzul Faris Zulkiffli</h1>
+  <img src="./assets/images/student.jpeg" class="rounded-full w-auto h-auto logo object-cover border-4 border-cream"/>
+  <h1 class="text-4xl font-semibold creamtext marg1">Izzul Faris Zulkiffli</h1>
 
     </div>
     <div class="flex-grow" >
-  <h1 class="text-2xl font-bold sapphire marg2">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
-  <br> <br> <br> <br> <br> 
-  <h1 class="text-2xl font-bold sapphire marg2">Currently, I'm pursuing a Level 5 Diploma in Web Development <br> at Politeknik Brunei. When I'm not immersed in coding, you <br> can find me cycling through scenic routes, diving into the <br> captivating world of anime, or enjoying a good game. <br> I also cherish spending quality time with friends. <br> Balancing my passion for technology with a vibrant array <br> of hobbies keeps me inspired and energized.</h1><br> 
-    </div>
+  <h1 class="text-2xl align-center font-bold creamtext marg2">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
+  <br> <br> <br> <br> <br>  <br> 
+  <h1 class="text-2xl align-center creamtext marg2">Currently, I'm pursuing a Level 5 Diploma in Web Development at Politeknik Brunei.<br> When I'm not immersed in coding, <br> you can find me cycling through scenic routes, <br> diving into the captivating world of anime, or enjoying a good game. <br> I also cherish spending quality time with friends. <br> Balancing my passion for technology with a vibrant array of hobbies keeps me inspired and energized.</h1><br> 
+  <br>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <h1 class="text-2xl font-bold creamtext marg2 align-center">CONTACTS:</h1>
+  <h1 class="text-2xl creamtext marg2 align-center">22ftt1517@student.pb.edu.bn</h1>
+  <h1 class="text-2xl creamtext marg2 align-center">+673 xxx xxxx</h1>
+  <h1 class="text-2xl creamtext marg2 align-center">www.faris.io</h1>
+
+
+  </div>
 </div>
 
 <br>
@@ -31,6 +42,10 @@ h1 {
     white-space: nowrap;
     overflow: visible;
     }
+  
+  .align-center{
+    text-align: center;
+  }
 
 .container {
     display: flex;
@@ -46,11 +61,12 @@ h1 {
 }
 
 .marg1{
+margin-top: 10%;
 margin-left: 42%;
 }
 
 .marg2{
-margin-left: 40%;
+margin-left: 15%;
 }
 
 .marg3{
@@ -68,6 +84,9 @@ margin-left: 10%;
   justify-content: center;
 }
 
+.creamtext{
+  color: #fffdd0;
+}
 
 .bordered-table {
   border-collapse: collapse;
