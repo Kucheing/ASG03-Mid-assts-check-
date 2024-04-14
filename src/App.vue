@@ -7,12 +7,33 @@ import HelloWorld from './components/HelloWorld.vue'
   <h1 class="text-3xl font-bold font-pacifico underline sapphire">Izzul Faris Zulkiffli</h1>
 <br>
 <br>
-    <h1 class="text-2xl font-beautiful lightgreentext">Full Name: Mohammad Izzul Faris Bin Haji Zulkiffli</h1>
-  <h1 class="text-2xl font-kalam margin-right redtext">Student ID: 22FTT1517</h1>
-  <h1 class="text-2xl font-beautiful lightgreentext">Programme: Web Development</h1>
-  <h1 class="text-2xl font-kalam redtext">Age: 19 Years Old</h1>
-  <h1 class="text-2xl font-beautiful lightgreentext">School: Politeknik Brunei School of Information, Communication and Technology</h1>
-  <h1 class="text-2xl font-kalam redtext">Email: fariszlk.com@gmail.com</h1>
+
+  <table>
+    <tr>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">Full Name: </h1></td>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">Mohammad Izzul Faris Bin Haji Zulkiffli</h1></td>
+    </tr>
+    <tr>
+      <td><h1 class="text-2xl font-kalam margin-right redtext">Student ID: </h1></td>
+      <td><h1 class="text-2xl font-kalam margin-right redtext">22FTT1517</h1></td>
+    </tr>
+    <tr>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">Programme: </h1></td>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">Web Development</h1></td>
+    </tr>
+    <tr>
+      <td><h1 class="text-2xl font-kalam redtext">Age: </h1></td>
+      <td><h1 class="text-2xl font-kalam redtext">19 Years Old</h1></td>
+    </tr>
+    <tr>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">School: </h1></td>
+      <td><h1 class="text-2xl font-beautiful lightgreentext">Politeknik Brunei School of Information, Communication and Technology</h1></td>
+    </tr>
+    <tr>
+      <td><h1 class="text-2xl font-kalam redtext">Email: </h1></td>
+      <td><h1 class="text-2xl font-kalam redtext">fariszlk.com@gmail.com</h1></td>
+    </tr>
+  </table>
 </template>
 
 <style scoped>
