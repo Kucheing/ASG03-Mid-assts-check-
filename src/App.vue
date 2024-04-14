@@ -2,46 +2,61 @@
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template class="background">
-<div class="center-container">
-    <img style="border-radius: 5%;" src="./assets/images/student.jpeg" class="logo cream-border"/>
-    <h1 class="text-3xl font-bold font-pacifico underline sapphire">Izzul Faris Zulkiffli</h1>
-  </div>
+
+<template style="width:100%" class="background">
+<div class="flex" style="width:100%">
+    <div>
+  <img src="./assets/images/student.jpeg" class="rounded-full w-auto h-auto logo object-cover"/>
+  <h1 class="text-4xl font-semibold lightgreentext marg1">Izzul Faris Zulkiffli</h1>
+
+    </div>
+    <div class="flex-grow" >
+  <h1 class="text-2xl font-bold sapphire marg2">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
+  <br> <br> <br> <br> <br> 
+  <h1 class="text-2xl font-bold sapphire marg2">Currently, I'm pursuing a Level 5 Diploma in Web Development <br> at Politeknik Brunei. When I'm not immersed in coding, you <br> can find me cycling through scenic routes, diving into the <br> captivating world of anime, or enjoying a good game. <br> I also cherish spending quality time with friends. <br> Balancing my passion for technology with a vibrant array <br> of hobbies keeps me inspired and energized.</h1><br> 
+    </div>
+</div>
+
 <br>
 <br>
 
-  <table class="bordered-table">
-    <tr>
-      <td><h1 class="text-2xl font-kalam lightgreentext">Full Name: </h1></td>
-      <td><h1 class="text-2xl font-kalam redtext">Mohammad Izzul Faris Bin Haji Zulkiffli</h1></td>
-    </tr>
-    <tr>
-      <td><h1 class="text-2xl font-kalam margin-right lightgreentext">Student ID: </h1></td>
-      <td><h1 class="text-2xl font-kalam margin-right redtext">22FTT1517</h1></td>
-    </tr>
-    <tr>
-      <td><h1 class="text-2xl font-kalam lightgreentext">Programme: </h1></td>
-      <td><h1 class="text-2xl font-kalam redtext">Web Development</h1></td>
-    </tr>
-    <tr>
-      <td><h1 class="text-2xl font-kalam lightgreentext">Age: </h1></td>
-      <td><h1 class="text-2xl font-kalam redtext">19 Years Old</h1></td>
-    </tr>
-    <tr>
-      <td><h1 class="text-2xl font-kalam lightgreentext">School: </h1></td>
-      <td><h1 class="text-2xl font-kalam redtext">Politeknik Brunei School of Information, Communication and Technology</h1></td>
-    </tr>
-    <tr>
-      <td><h1 class="text-2xl font-kalam lightgreentext">Email: </h1></td>
-      <td><h1 class="text-2xl font-kalam redtext">fariszlk.com@gmail.com</h1></td>
-    </tr>
-  </table>
+      
   
 </template>
 
 <style scoped>
 /* For desktop view */
 @media (min-width: 1024px) {
+h1 {
+    white-space: nowrap;
+    overflow: visible;
+    }
+
+.container {
+    display: flex;
+    overflow: visible;
+}
+
+.first-column {
+    width: 200px; /* Or whatever fixed width you want */
+}
+
+.second-column {
+    flex-grow: 1;
+}
+
+.marg1{
+margin-left: 42%;
+}
+
+.marg2{
+margin-left: 40%;
+}
+
+.marg3{
+margin-left: 10%;
+
+}
 
 .background {
   --background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
@@ -62,10 +77,15 @@ import HelloWorld from './components/HelloWorld.vue'
   border: 1px solid white;
   padding: 8px;
 }
+
 .logo {
-  height: 30em;
+  height: 500px;
+  width: 500px;
   will-change: filter;
-  transition: filter 300ms;}
+  transition: filter 300ms;
+  margin-left: 175px;
+  margin-bottom: 30px;
+  }
 
 .font-kalam{
   font-family: 'Kalam', monospace;
@@ -98,6 +118,7 @@ import HelloWorld from './components/HelloWorld.vue'
 .margin-right{
   margin-right: 10px;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #fffdd0);
 }
@@ -111,12 +132,6 @@ import HelloWorld from './components/HelloWorld.vue'
   .background {
   --background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
 }
-.center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .bordered-table {
   border-collapse: collapse;
@@ -126,10 +141,19 @@ import HelloWorld from './components/HelloWorld.vue'
   border: 1px solid white;
   padding: 8px;
 }
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  height: 30em;
+  height: 350px;
+  width: 350px;
   will-change: filter;
-  transition: filter 300ms;}
+  transition: filter 300ms;
+  }
 
 .font-kalam{
   font-family: 'Kalam', monospace;
@@ -148,11 +172,11 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 
 .sapphire{
-  color: #0f52ba;
+  color: #ffffff;
 }
 
 .redtext{
-  color: #ff0000;
+  color: #8abb86;
 }
 
 .lightgreentext{
@@ -163,7 +187,7 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-right: 10px;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #fffdd0);
+  filter: drop-shadow(0 0 2em #8abb86);
 }
 }
 
