@@ -4,40 +4,92 @@ import HelloWorld from './components/HelloWorld.vue'
 
 
 <template style="width:100%" class="background">
-<div class="flex" style="width:100%">
-    <div>
-  <img src="./assets/images/student.jpeg" class="rounded-full w-auto h-auto logo object-cover border-4 border-cream"/>
-  <h1 class="text-4xl font-semibold creamtext marg1">Izzul Faris Zulkiffli</h1>
-
+<div class="flex-wrap md:flex" style="width:100%">
+    <div class="">
+  <img src="./assets/images/student.jpeg" class="align-center1 containerpic rounded-full w-auto h-auto logo object-cover border4w border4r"/>
+  <h1 class="text-4xl font-semibold creamtext marg1 align-center1">Izzul Faris Zulkiffli</h1>
     </div>
-    <div class="flex-grow" >
-  <h1 class="text-2xl align-center font-bold creamtext marg2">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
+    <div class="flex-grow">
+  <h1 class="text-2xl align-center font-bold creamtext marg2 align-center1">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
   <br> <br> <br> <br> <br>  <br> 
-  <h1 class="text-2xl align-center creamtext marg2">Currently, I'm pursuing a Level 5 Diploma in Web Development at Politeknik Brunei.<br> When I'm not immersed in coding, <br> you can find me cycling through scenic routes, <br> diving into the captivating world of anime, or enjoying a good game. <br> I also cherish spending quality time with friends. <br> Balancing my passion for technology with a vibrant array of hobbies keeps me inspired and energized.</h1><br> 
+  <h1 class="text-2xl align-center creamtext marg2 align-center1">Currently, I'm pursuing a Level 5 Diploma in Web Development at <br> Politeknik Brunei. When I'm not immersed in coding, <br> you can find me cycling through scenic routes, <br> diving into the captivating world of anime, or enjoying a <br> good game. I also cherish spending quality time with friends. <br> Balancing my passion for technology with a vibrant array <br> of hobbies keeps me inspired and energized.</h1>
   <br>
   <br>
   <br>
   <br> 
   <br>
-  <h1 class="text-2xl font-bold creamtext marg2 align-center">CONTACTS:</h1>
-  <h1 class="text-2xl creamtext marg2 align-center">22ftt1517@student.pb.edu.bn</h1>
-  <h1 class="text-2xl creamtext marg2 align-center">+673 xxx xxxx</h1>
-  <h1 class="text-2xl creamtext marg2 align-center">www.faris.io</h1>
-
-
+  <h1 class="text-2xl font-bold creamtext marg2 align-center align-center1">CONTACTS:</h1>
+  <h1 class="text-2xl creamtext marg2 align-center align-center1">22ftt1517@student.pb.edu.bn</h1>
+  <h1 class="text-2xl creamtext marg2 align-center align-center1">+673 xxx xxxx</h1>
+  <h1 class="text-2xl creamtext marg2 align-center align-center1">www.faris.io</h1>
   </div>
 </div>
 
 <br>
 <br>
-
-      
-  
 </template>
 
 <style scoped>
+/* For mobile view */
+@media (max-width: 768px) {
+.containerpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border4r{
+border: 4px solid #ff0000;
+}
+
+.creamtext{
+  color: #ff0000;
+}
+
+.align-centerpic{
+  justify-items: center;
+}
+
+.align-center1{
+  text-align: center;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+  will-change: filter;
+  transition: filter 300ms;
+  margin-left: 150px;
+  margin-bottom: 30px;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-column {
+    width: 100%; /* Or whatever percentage you want */
+}
+
+.second-column {
+    width: 100%; /* Or whatever percentage you want */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ff0000);
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+}
+
 /* For desktop view */
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
+.border4{
+  border: 4px solid #fffdd0;
+}
 h1 {
     white-space: nowrap;
     overflow: visible;
@@ -141,73 +193,6 @@ margin-left: 10%;
 .logo:hover {
   filter: drop-shadow(0 0 2em #fffdd0);
 }
-
-  
 } 
-
-/* For mobile view */
-@media (max-width: 768px) {
-  
-  .background {
-  --background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
-}
-
-.bordered-table {
-  border-collapse: collapse;
-}
-
-.bordered-table td, .bordered-table th {
-  border: 1px solid white;
-  padding: 8px;
-}
-.center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 350px;
-  width: 350px;
-  will-change: filter;
-  transition: filter 300ms;
-  }
-
-.font-kalam{
-  font-family: 'Kalam', monospace;
-}
-
-.font-pacifico{
-  font-family: 'Pacifico', fantasy;
-}
-
-.font-beautiful{
-  font-family: 'Beautiful People', serif;
-}
-
-.cream-border{
-  border: 3px solid #fffdd0;
-}
-
-.sapphire{
-  color: #ffffff;
-}
-
-.redtext{
-  color: #8abb86;
-}
-
-.lightgreentext{
-  color: #8abb86;
-  }
-
-.margin-right{
-  margin-right: 10px;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #8abb86);
-}
-}
 
 </style>
