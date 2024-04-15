@@ -10,6 +10,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   --background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
+  /* Currently, I'm pursuing a Level 5 Diploma in Web Development at Politeknik Brunei. When I'm not immersed in coding, you can find me cycling through scenic routes, diving into the captivating world of anime, or enjoying a good game. I also cherish spending quality time with friends. Balancing my passion for technology with a vibrant array of hobbies keeps me inspired and energized. */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +23,6 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-
 a:hover {
   color: #535bf2;
 }
@@ -34,7 +34,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(1px)
 }
 
 h1 {
