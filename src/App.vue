@@ -3,10 +3,10 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 
-<template style="width:100%" class="background">
+<template style="width:100%">
 <div class="flex-wrap md:flex" style="width:100%">
-    <div class="">
-  <img src="./assets/images/student.jpeg" class="align-center1 containerpic rounded-full w-auto h-auto logo object-cover border4w border4r"/>
+    <div>
+  <img src="./assets/images/student.jpeg" class="align-center1 containerpic rounded-full w-auto h-auto logo object-cover border4r"/>
   <h1 class="text-4xl font-semibold creamtext marg1 align-center1">Izzul Faris Zulkiffli</h1>
     </div>
     <div class="flex-grow">
@@ -32,26 +32,24 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 /* For mobile view */
 @media (max-width: 768px) {
+
 .containerpic {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
+
 .border4r{
 border: 4px solid #ff0000;
-}
+  }
 
 .creamtext{
   color: #ff0000;
-}
-
-.align-centerpic{
-  justify-items: center;
-}
+  }
 
 .align-center1{
   text-align: center;
-}
+  }
 
 .logo {
   height: 250px;
@@ -65,89 +63,38 @@ border: 4px solid #ff0000;
 .container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.first-column {
-    width: 100%; /* Or whatever percentage you want */
-}
-
-.second-column {
-    width: 100%; /* Or whatever percentage you want */
-}
+  }
 
 .logo:hover {
   filter: drop-shadow(0 0 2em #ff0000);
+  }
 }
 
-.span-2 {
-    grid-column: span 2;
-}
-
-}
 
 /* For desktop view */
 @media (min-width: 1600px) {
-.border4{
-  border: 4px solid #fffdd0;
-}
+
 h1 {
     white-space: nowrap;
     overflow: visible;
-    }
+  }
   
-  .align-center{
+.align-center {
     text-align: center;
   }
 
-.container {
-    display: flex;
-    overflow: visible;
-}
-
-.first-column {
-    width: 200px; /* Or whatever fixed width you want */
-}
-
-.second-column {
-    flex-grow: 1;
-}
-
-.marg1{
+.marg1 {
 margin-top: 10%;
 margin-left: 42%;
-}
+  }
 
 .marg2{
 margin-left: 15%;
-}
+  }
 
-.marg3{
-margin-left: 10%;
-
-}
-
-.background {
-  --background: url('./assets/images/background-flower.jpg') no-repeat center center / cover;
-}
-.center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.creamtext{
+.creamtext {
   color: #fffdd0;
-}
-
-.bordered-table {
-  border-collapse: collapse;
-}
-
-.bordered-table td, .bordered-table th {
-  border: 1px solid white;
-  padding: 8px;
-}
+  }
 
 .logo {
   height: 500px;
@@ -158,41 +105,8 @@ margin-left: 10%;
   margin-bottom: 30px;
   }
 
-.font-kalam{
-  font-family: 'Kalam', monospace;
-}
-
-.font-pacifico{
-  font-family: 'Pacifico', fantasy;
-}
-
-.font-beautiful{
-  font-family: 'Beautiful People', serif;
-}
-
-.cream-border{
-  border: 3px solid #fffdd0;
-}
-
-.sapphire{
-  color: #0f52ba;
-}
-
-.redtext{
-  color: #ff0000;
-}
-
-.lightgreentext{
-  color: #8abb86;
-  }
-
-.margin-right{
-  margin-right: 10px;
-}
-
 .logo:hover {
   filter: drop-shadow(0 0 2em #fffdd0);
-}
+  }
 } 
-
 </style>
