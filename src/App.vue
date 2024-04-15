@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
 <div class="flex-wrap md:flex" style="width:100%">
     <div>
   <img src="./assets/images/student.jpeg" class="align-center1 containerpic rounded-full w-auto h-auto logo object-cover border4r"/>
-  <h1 class="text-4xl font-semibold creamtext marg1 align-center1">Izzul Faris Zulkiffli</h1>
+  <h1 class="text-4xl font-semibold creamtext marg1 align-center1">Siapa kan namammu?</h1>
     </div>
     <div class="flex-grow">
   <h1 class="text-2xl align-center font-bold creamtext marg2 align-center1">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
@@ -109,4 +109,5 @@ margin-left: 15%;
   filter: drop-shadow(0 0 2em #fffdd0);
   }
 } 
+
 </style>
