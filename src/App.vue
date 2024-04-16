@@ -8,6 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div>
   <img src="./assets/images/student.jpeg" class="border-4 border-solid border-red-700 h-64 w-64 ml-40 mb-8 flex justify-center items-center rounded-full lg:h-128 lg:w-128 lg:border-4 lg:border-solid lg:border-yellow-100 logo object-cover "/>
   <h1 class="text-4xl text-red-700 font-bold text-center  lg:mt-20 lg:text-4xl lg:ml-40 lg:text-yellow-100">Izzul Faris Zulkiffli</h1>
+  <p>Hello world</p>
     </div>
     <div class="flex-grow">
   <h1 class="text-4xl text-red-700 text-center font-bold lg:mt-20 lg:text-4xl lg:ml-40 lg:text-yellow-100">Mohammad Izzul Faris Bin Haji Zulkiffli, 22FTT1517, DWDT08</h1>
