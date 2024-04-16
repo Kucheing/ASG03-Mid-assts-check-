@@ -58,6 +58,10 @@ border-color: red;
 
 /* For desktop view */
 @media (min-width: 1024px) {
+h1 {
+    white-space: nowrap;
+    overflow: visible;
+  }
 
 .logo {
   height: 500px;
